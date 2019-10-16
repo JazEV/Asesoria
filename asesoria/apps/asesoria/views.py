@@ -1,3 +1,6 @@
-from django.shortcuts import render
+from rest_framework import viewsets
 
-# Create your views here.
+class TurnoPorEscuelaViewSet(viewsets.ModelViewSet):
+	queryset = Turno.objects.all()
+	serializer_class = TurnoSerializer
+
