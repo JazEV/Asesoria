@@ -140,3 +140,5 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.TokenAuthentication',
     ],
 }
+
+TIME_INPUT_FORMATS=( '%H:%M', )
