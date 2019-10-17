@@ -13,8 +13,15 @@ class Turno(models.Model):
 
 	MOTIVO_CHOICES = [
         ('escolar', 'Escolar'),
-        ('escolar', 'Personal'),
+        ('personal', 'Personal'),
     ]
+
+	
+	horario = models.TimeField(
+		null=True,
+		blank=True,
+		help_text='Ingrese el horario que tenga disponible.'
+	)
 
 	notas = models.TextField(
 		help_text='(*Opcional.)'
