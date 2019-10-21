@@ -8,4 +8,5 @@ router.register('turnos', TurnoViewSet)
 
 urlpatterns = [
 	path('', include(router.urls))
+	path('turno/create/', include(router.urls))
 ]
