@@ -6,13 +6,12 @@
 	<div class="row">
 		<div class="col mt-2 mb-2">
 			<h1>Asesoria</h1>
-			<a href="{% url 'turno:turno_create' %}" class="btn btn-sm btn-dark mt-2 mb-2">Sacar turno.</a>
+			<a href="{% url 'asesoria:turno_create' %}" class="btn btn-sm btn-dark mt-2 mb-2">Sacar turno.</a>
 			<form action="" method="post">
 				{% csrf_token %}
 				{{ form|crispy }}
-				<input class="btn btn-sm btn-success" type="submit" value="Crear pregunta">
+				<input class="btn btn-sm btn-success" type="submit" value="Enviar turno">
 			</form>
-			<p class="lead mt-3">(*) Campos obligatorios</p>
 		</div>
 	</div>
 	<div class="row">

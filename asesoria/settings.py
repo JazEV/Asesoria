@@ -45,7 +45,7 @@ THIRD_PARTY_APPS = [
 ]
 
 LOCAL_APPS = [
-    'apps.asesoria',
+    'apps.turno',
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
