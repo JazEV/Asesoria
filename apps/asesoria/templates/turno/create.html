@@ -1,0 +1,14 @@
+{% block titulo %}Turno: create{% endblock titulo %}
+{% block contenido %}
+<div class="container">
+	<div class="row">
+		<div class="col-md-6 mt-3">
+			<form action="" method="post">
+				{% csrf_token %}
+				{{ form }}
+				<input class="btn btn-sm btn-success" type="submit" value="Crear pregunta">
+			</form>
+		</div>
+	</div>
+</div>
+{% endblock contenido %}
