@@ -16,9 +16,9 @@ class TurnoViewSet(viewsets.ModelViewSet):
 
 class TurnoCreate(LoginRequiredMixin, CreateView):
 	model = Turno
-	fields = ['nombre', 'apellido', 'motivo', 'horario', 'notas']
+	fields = ['nombre', 'apellido', 'motivo', 'horario', 'nota']
 	template_name = 'template/turno/create.html'
-	success_url = reverse_lazy('turno:index')
+	success_url = reverse_lazy('asesoria:index')
 
 class IndexView(TemplateView):
 	template_name = 'turno/index.html'
