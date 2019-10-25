@@ -41,11 +41,14 @@ DJANGO_APPS = [
 
 THIRD_PARTY_APPS = [
     'rest_framework',
+    'crispy_forms',
 ]
 
 LOCAL_APPS = [
     'apps.asesoria',
 ]
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
