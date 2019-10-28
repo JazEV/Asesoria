@@ -5,12 +5,16 @@
 	<div class="row">
 		<div class="col mt-2 mb-2">
 			<h1>Asesoria</h1>
-			<p>Contactenos:</p>
+			<h3>Contactenos:</h3>
+			<div class="jumbotron">
+			<p class="display-4">Turno:</p>
 			<form action="#" method="post">
 				{% csrf_token %}
 				{{ form|crispy }}
 				<input class="btn btn-sm btn-success" type="submit" value="Enviar">
 			</form>
+			</div>
+		</div>
 		</div>
 	</div>
 	<div class="row">
