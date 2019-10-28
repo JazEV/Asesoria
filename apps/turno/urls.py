@@ -12,5 +12,5 @@ router.register('turno', TurnoViewSet)
 
 urlpatterns = [
 	path('', include(router.urls)),	
-	path ('index/', TurnoCreate.as_view(), name='turno_create'),
+	path ('asesoria/', TurnoCreate.as_view(), name='turno_create'),
 ]
