@@ -1,13 +1,11 @@
 {% extends 'base.html' %}
 {% load crispy_forms_tags %}
-{% block titulo %}ASESORIA{% endblock titulo %}
 {% block contenido %}
 <div class="container">
 	<div class="row">
 		<div class="col mt-2 mb-2">
 			<h1>Asesoria</h1>
-			<a href="{% url 'asesoria:turno_create' %}" class="btn btn-sm btn-dark mt-2 mb-2">Sacar turno.</a>
-			<form action="" method="post">
+			<form action="#" method="post">
 				{% csrf_token %}
 				{{ form|crispy }}
 				<input class="btn btn-sm btn-success" type="submit" value="Enviar turno">

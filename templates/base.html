@@ -7,12 +7,14 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <title>Mi bella sitio</title>
+  <title>{% block titulo %}ASESORIA{% endblock titulo %}</title>
 </head>
 <body>
-  <h1>Hola Taller de Python/Django</h1>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  {% block contenido %}
+
+  {% endblock contenido %}
   <script src="js/jquery-3.3.1.slim.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
