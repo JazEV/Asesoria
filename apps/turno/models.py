@@ -12,7 +12,7 @@ class Turno(models.Model):
 	)
 	
 	horario = models.TimeField(
-		null=True,
+		null=False,
 		help_text='Ingrese el horario que tenga disponible.'
 	)
 

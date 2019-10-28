@@ -19,7 +19,3 @@ class TurnoCreate(CreateView):
 	fields = ['nombre', 'apellido', 'horario', 'nota']
 	template_name = 'turno/index.html'
 	success_url = reverse_lazy('turno:turno_create')
-
-# class IndexView(TemplateView):
-# 	model = Turno
-# 	template_name = 'turno/index.html'
