@@ -10,12 +10,6 @@ class Turno(models.Model):
 		max_length=20,
 		help_text='Ingrese su apellido.'
 	)
-
-	motivo = (
-        ('escolar', 'Escolar'),
-        ('personal', 'Personal'),
-    )
-
 	
 	horario = models.TimeField(
 		null=True,

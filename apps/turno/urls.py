@@ -4,15 +4,13 @@ from rest_framework import routers
 from .views import (
 	TurnoViewSet,
 	TurnoCreate,
-	IndexView,
 )
 
 router = routers.DefaultRouter()
-router.register('turno', TurnoViewSet),
+router.register('turno', TurnoViewSet)
 
 
 urlpatterns = [
 	path('', include(router.urls)),	
-	path ('turno/create', TurnoCreate.as_view(), name='turno_create'),
-	path ('turno/index', IndexView.as_view(), name='index'),
+	path ('index/', TurnoCreate.as_view(), name='turno_create'),
 ]

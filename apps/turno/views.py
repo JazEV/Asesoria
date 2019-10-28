@@ -14,12 +14,12 @@ class TurnoViewSet(viewsets.ModelViewSet):
 	queryset = Turno.objects.all()
 	serializer_class = TurnoSerializer
 
-class TurnoCreate(LoginRequiredMixin, CreateView):
+class TurnoCreate(CreateView):
 	model = Turno
-	fields = ['nombre', 'apellido', 'motivo', 'horario', 'nota']
-	template_name = 'turno/create.html'
-	success_url = reverse_lazy('asesoria:turno_create')
-
-class IndexView(TemplateView):
-	model = Turno
+	fields = ['nombre', 'apellido', 'horario', 'nota']
 	template_name = 'turno/index.html'
+	success_url = reverse_lazy('turno:turno_create')
+
+# class IndexView(TemplateView):
+# 	model = Turno
+# 	template_name = 'turno/index.html'

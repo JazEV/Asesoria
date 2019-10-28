@@ -8,4 +8,4 @@ class TurnoSerializer(serializers.HyperlinkedModelSerializer):
 
 	class Meta:
 		model = Turno
-		fields = ['nombre', 'apellido', 'horario','motivo', 'nota']
+		fields = ['nombre', 'apellido', 'horario', 'nota']
