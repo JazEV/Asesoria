@@ -16,6 +16,6 @@ class TurnoViewSet(viewsets.ModelViewSet):
 
 class TurnoCreate(CreateView):
 	model = Turno
-	fields = ['nombre', 'apellido', 'horario', 'nota']
+	fields = ['nombre', 'apellido', 'horario', 'motivo', 'nota']
 	template_name = 'turno/index.html'
 	success_url = reverse_lazy('turno:turno_create')

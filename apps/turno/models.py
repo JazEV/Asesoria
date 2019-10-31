@@ -16,11 +16,20 @@ class Turno(models.Model):
 		help_text='Ingrese el horario que tenga disponible.'
 	)
 
+	ESCOLAR = "Escolar"
+	PERSONAL = "Personal"
+
+	MOTIVO = [
+        (ESCOLAR, 'Escolar'),
+        (PERSONAL, 'Personal')
+    ]
+
+	motivo = models.CharField(max_length=1, choices=MOTIVO, default=ESCOLAR, help_text='Ingrese aquí el motivo.')
+
 	nota = models.TextField(
 		blank=True,
 		help_text='(*Opcional.)'
 	)
-
 
 	class Meta:
 		verbose_name='Turno'
