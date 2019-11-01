@@ -1,3 +1,4 @@
+from phonenumber_field.modelfields import PhoneNumberField
 from django.db import models
 
 class Turno(models.Model):
@@ -25,6 +26,10 @@ class Turno(models.Model):
     ]
 
 	motivo = models.CharField(max_length=1, choices=MOTIVO, default=ESCOLAR, help_text='Ingrese aquí el motivo.')
+
+	telefono = PhoneNumberField('Teléfono', help_text='Ingrese su teléfono.')
+
+	email = models.EmailField(help_text='Ingrese aquí su email.')
 
 	nota = models.TextField(
 		blank=True,
