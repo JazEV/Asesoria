@@ -4,17 +4,17 @@ from django.db import models
 class Turno(models.Model):
 	nombre = models.CharField(
 		max_length=20,
-		help_text = 'Ingrese su nombre.'
+		help_text = 'Ingresá tu nombre.'
 	)
 
 	apellido = models.CharField(
 		max_length=20,
-		help_text='Ingrese su apellido.'
+		help_text='Ingresá tu apellido.'
 	)
 	
 	horario = models.TimeField(
 		null=False,
-		help_text='Ingrese el horario que tenga disponible.'
+		help_text='Ingresá el horario que te quede cómodo.'
 	)
 
 	ESCOLAR = "Escolar"
@@ -25,15 +25,15 @@ class Turno(models.Model):
         (PERSONAL, 'Personal')
     ]
 
-	motivo = models.CharField(max_length=1, choices=MOTIVO, default=ESCOLAR, help_text='Ingrese aquí el motivo.')
+	motivo = models.CharField(max_length=1, choices=MOTIVO, default=ESCOLAR, help_text='Ingresá el motivo.')
 
-	telefono = PhoneNumberField('Teléfono', help_text='Ingrese su teléfono.')
+	telefono = PhoneNumberField('Teléfono', help_text='Ingresá tu teléfono.')
 
-	email = models.EmailField(help_text='Ingrese aquí su email.')
+	email = models.EmailField(help_text='Ingresá tu email.')
 
 	nota = models.TextField(
 		blank=True,
-		help_text='(*Opcional.)'
+		help_text='Ingresá un resumen del motivo. (*Opcional.)'
 	)
 
 	class Meta:
