@@ -1,8 +1,8 @@
 Django==2.2.4
-djangorestframework==3.10.2
+djangorestframework==3.11.2
 pytz==2019.1
 sqlparse==0.3.0
 django-crispy-forms==1.8.0
 django-phonenumber-field==3.0.1
-djangorestframework==3.10.2
+djangorestframework==3.11.2
 phonenumbers==8.10.22
